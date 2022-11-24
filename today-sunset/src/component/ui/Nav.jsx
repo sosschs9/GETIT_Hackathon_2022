@@ -1,8 +1,8 @@
 import React from "react";
 import '../../index.css';
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-function Nav(props){
+function Nav(){
     const navigate = useNavigate();
 
     return (

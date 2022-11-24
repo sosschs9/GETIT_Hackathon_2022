@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import PhotoListItem from "./PhotoListItem";
 
-//PhotoListITem(한포스트에 대해 제목만 보여줌) 
 const Wrapper = styled.div`
     display:flex;
     flex-direction:column;
@@ -22,8 +21,7 @@ function PhotoList(props)
     const navigate = useNavigate();
     const{photos} = props;
     
-
-    return(//map함수로 각 post자료 객체에 대해 PhotoListItem 컴포넌트(붕어빵)을 만들어 렌더링
+    return(
         <Wrapper> 
             {photos.map((photo, index, count)=>{
                 return(
@@ -33,7 +31,6 @@ function PhotoList(props)
                         count = {photo.count}
                         onClick={()=>{
                             navigate(`/photo/${photo.index}`);
-                            //setCount(count+1);
                         }}
                     />
                 );

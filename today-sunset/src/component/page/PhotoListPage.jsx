@@ -26,6 +26,12 @@ const Container = styled.div`
     }
 `;
 
+const TitleText = styled.p`
+    font-size: 28px;
+    font-weight: 500;
+`;
+
+
 function PhotoListPage(props) {
     const {} = props;
 
@@ -36,6 +42,7 @@ function PhotoListPage(props) {
             <Nav/>
             <Wrapper>
                 <Container>
+                    <TitleText>노을 구경하기</TitleText>
                     <PhotoList
                         photos={data}
                         onClickItem={(item) => {

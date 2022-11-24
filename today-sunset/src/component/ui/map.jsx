@@ -53,18 +53,17 @@ function MapView () {
         //마커가 표시 될 위치
         position: new kakao.maps.LatLng(el.lat, el.lng),
         //마커에 hover시 나타날 title
-        title: el.title,
+        title: el.location,
         clickable: true,
       });
       kakao.maps.event.addListener(marker, 'click', function photoView() {
-        // 마커 위에 인포윈도우를 표시합니다
         window.location.replace(`/photo/${el.index}`)
       });
     });
   };
 
   return (
-    <div id="map" style={{ width: "640px", height: "450px" }}></div>
+    <div id="map" style={{ width: "100%", height: "450px" }}></div>
   );
 }
                     

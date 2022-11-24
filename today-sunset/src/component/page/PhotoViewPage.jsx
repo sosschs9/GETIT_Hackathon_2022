@@ -1,11 +1,13 @@
-import React, { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import React from "react";
+import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import Nav from "../ui/Nav";
 import Footer from "../ui/footer";
 import data from "../../data.json";
 import Like from "../ui/Like";
-import Button from "../ui/Button";
+import image1 from "../../assets/images/image1.jpg";
+import image2 from "../../assets/images/image2.jpg";
+import image3 from "../../assets/images/image3.jpg";
 
 const Wrapper = styled.div`
     padding: 16px;
@@ -39,20 +41,13 @@ const TitleText = styled.p`
 `;
 
 const ContentText = styled.p`
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
     white-space: pre-wrap;
 `;
 
-const ImageText = styled.p`
-    position: absolute;
-    width: 100px;
-    height:100px;
-    display:inline-block;
-`
 
-function PhotoViewPage(props) {
-    const navigate = useNavigate();
+function PhotoViewPage() {
     const { photoId } = useParams();
 
     const photo = data.find((item) => {
@@ -65,21 +60,49 @@ function PhotoViewPage(props) {
             <Wrapper>
                 <Container>
                     <PhotoContainer>
-                        <TitleText>{photo.title}</TitleText>
-                        <ContentText>{photo.content}</ContentText>
-                        <span><Button title="작성자"></Button>  {photo.writer}</span><br/>
-                        <span><Like/>{photo.like}</span><br/>
-                        <span><Button title = "노을 시간"></Button>{photo.time}</span><br/>
-                        <span><Button title = "노을 사진"></Button><br/>
-                        <ImageText> <img src="C:\GETIT\GETIT_Hackathon_2022\today-sunset\public\images" alt=""/> </ImageText>
-                        </span>
-                        <span><Button title = "노을 내용"></Button> <br/> {photo.contents}</span>
-                        
-                        
+                    <TitleText>{photo.title}</TitleText>
+                    <span><Like/> {photo.like} 개</span><br/>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <p>작성자 : </p>
+                            </div>
+                            <div class="col-6">
+                                <p>{photo.writer}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>노을시간 : </p>
+                            </div>
+                            <div class="col-6">
+                                <p>{photo.time}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>노을사진 : </p>
+                            </div>
+                            <div class="col-6">
+                                <img src={image1} alt="" style={{
+                                width: "100%",
+                                height: "auto" }}/> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>노을내용 : </p>
+                            </div>
+                            <div class="col-6">
+                                <ContentText>{photo.contents}</ContentText>
+                            </div>
+                        </div>
+                    </div>
                     </PhotoContainer>
                 </Container>
             </Wrapper>
             <Footer/>
+
         </body>
     );
 }

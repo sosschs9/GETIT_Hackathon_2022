@@ -10,7 +10,7 @@ const StyledLike = styled.button`
     cursor : pointer;
 `;
 
-function Like() {
+function Like(props) {
     const [ like, setCount ] = useState(0);
 
     const Increase = () => {

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import styled from "styled-components";
 
-const viewer= styled.p`
+const Viewer= styled.p`
     background-color : white;
-    font-size : 30px;
+    font-size : 20px;
 `
 
 function Time(props){
@@ -25,7 +25,7 @@ function Time(props){
 
     return (
         <div class="d-grid gap-2 col-6 mx-auto">
-        <viewer>{timer}</viewer>
+        <Viewer>현재시간: {timer}</Viewer>
       </div>
     );
 }
