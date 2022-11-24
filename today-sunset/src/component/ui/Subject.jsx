@@ -18,9 +18,11 @@ function Subject(props){
         <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">노을 제목</span>
             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value={text} onChange={(e) => {setText(e.target.value);}}/>
-            <Button onClick={onChange} title={'글 작성하기'}></Button>
-        </div>
+           </div>
     );
 }
+
+
+
 
 export default Subject;

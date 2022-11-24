@@ -16,8 +16,7 @@ function Upload(props){
     return(
         <div class="input-group mb-3">
         <input type="file" class="form-control" id="inputGroupFile02"/>
-        <Button onClick={onChange} class="input-group-text" for="inputGroupFile02" title={'파일 올리기'}></Button>
-    </div>
+        </div>
     );
 }
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
+import data from "../../data.json";
 
 const StyledLike = styled.button`
     padding : 8px 16px;
@@ -10,14 +11,14 @@ const StyledLike = styled.button`
 `;
 
 function Like() {
-    const [ count, setCount ] = useState(0);
+    const [ like, setCount ] = useState(0);
 
     const Increase = () => {
-        setCount(count => count + 1);
+        setCount(like => like + 1);
     };
 
     return(
-        <StyledLike onClick = {Increase}> like {count} </StyledLike>
+        <StyledLike onClick = {Increase}> like {data.like} </StyledLike>
     );
 }
 

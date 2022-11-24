@@ -32,10 +32,10 @@ function PhotoUpload(props) {
     <body class="d-flex flex-column min-vh-100">
         <Nav/>
         <section class="py-5">
-          <div class="container px-4 px-lg-5 my-5">
-            <Subject/>
-            <Writer/>
-            <Location/>
+          <div class="container px-4 px-lg-5 my-5">  
+            <Subject>line-height = 10px</Subject>
+            <Writer>line-height = 10px</Writer> 
+            <Location>line-height = 10px</Location>
             <Time/>
             <Text/>
             <Upload/>

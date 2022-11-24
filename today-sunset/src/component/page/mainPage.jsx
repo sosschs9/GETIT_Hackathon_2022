@@ -1,12 +1,29 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Nav from "../ui/Nav";
 import Footer from "../ui/footer";
 import MapView from "../ui/map";
 import PhotoList from "../list/PhotoList";
+import data from '../../data.json';
+
+function arrOrder(key, order) {
+    return function(a, b) {
+        if (a[key] > b[key]) {    
+            return -order;    
+        } else if (a[key] < b[key]) {    
+            return order;    
+        } 
+        
+        return 0;    
+    }    
+}
 
 function MainPage(props){
     const navigate = useNavigate();
+
+    data.sort(arrOrder("like", 1));
+    var Fivedata = data.slice(0, 5);
+    data.sort(arrOrder("index", -1));
 
     return (
         <body class="d-flex flex-column min-vh-100">
@@ -16,7 +33,14 @@ function MainPage(props){
                 <div class="container px-4 px-lg-5 my-5">
                     <div class="row gx-4 gx-lg-5 align-items-center">
                         <div class="col-md-6"><MapView /></div>
-                        <div class="col-md-6">좋아요 상위 5개 리스트</div>
+                        <div class="col-md-6"> 
+                            <PhotoList
+                                photos={ Fivedata }
+                                onClickItem={(item) => {
+                                    navigate(`/photo/${item.index}`);
+                                }}
+                            />
+                        </div>
                     </div>
                 </div>
             </section>

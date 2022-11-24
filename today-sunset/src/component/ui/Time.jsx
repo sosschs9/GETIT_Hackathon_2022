@@ -1,4 +1,10 @@
 import React, { useState } from 'react'
+import styled from "styled-components";
+
+const viewer= styled.p`
+    background-color : white;
+    font-size : 30px;
+`
 
 function Time(props){
     const [timer, setTimer] = useState("00:00:00");
@@ -19,7 +25,7 @@ function Time(props){
 
     return (
         <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-primary" type="button">{timer}</button>
+        <viewer>{timer}</viewer>
       </div>
     );
 }

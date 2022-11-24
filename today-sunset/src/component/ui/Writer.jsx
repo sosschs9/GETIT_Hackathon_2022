@@ -17,7 +17,6 @@ function Writer(props)
         <div class="input-group flex-nowrap">
         <span class="input-group-text" id="addon-wrapping">이름</span>
         <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping"/>
-        <Button onClick={onChange} title={'입력'}></Button>
     </div>
     );
 }

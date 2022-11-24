@@ -16,7 +16,7 @@ function App() {
           <Route index element={<MainPage/>}/>
           <Route path="photo-upload" element={<PhotoUpload />} />
           <Route path="photolist-view" element={<PhotoListPage />} />
-          <Route path="photo/:postId" element={<PhotoViewPage />} />
+          <Route path="photo/:photoId" element={<PhotoViewPage />} />
         </Routes>
       </BrowserRouter>  
     </div>
