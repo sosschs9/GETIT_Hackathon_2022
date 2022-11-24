@@ -1,7 +1,7 @@
 # [GETIT_Hackathon_2022] Today's Sunset(오늘의 노을) 
 
 ### 내가그린기릿그림 팀
-> 팀 Notion : ![Notion](https://yjy1220.notion.site/202202-GETIT-e99f1012a42947df8bd03e36fbd1fc6b)
+> 팀 Notion : [Notion](https://yjy1220.notion.site/202202-GETIT-e99f1012a42947df8bd03e36fbd1fc6b)
 
 ## 1.프로젝트 한 줄 설명
 ![image](https://user-images.githubusercontent.com/93771689/203872282-1a92cc78-2624-4adb-9723-bad23f1b3727.png)
@@ -46,7 +46,7 @@ data.json에 직접 데이터를 넣었으나, 추후 개발 tool인 react와 �
 #### [기술스택]
 <디자인>
 * figma
-![오늘의 노을](https://www.figma.com/file/a95IhbR84MlFaBXHaGkfQQ/Untitled?node-id=15%3A69&t=VQ6QU5tQkmCK0dsT-1)
+[오늘의 노을](https://www.figma.com/file/a95IhbR84MlFaBXHaGkfQQ/Untitled?node-id=0%3A1&t=ng6mqJSoW2cX4mdR-1)
 
 <프론트>
 * react
