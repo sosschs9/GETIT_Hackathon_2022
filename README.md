@@ -45,6 +45,8 @@ data.json에 직접 데이터를 넣었으나, 추후 개발 tool인 react와 �
 #### [기술스택]
 <디자인>
 * figma
+https://www.figma.com/file/a95IhbR84MlFaBXHaGkfQQ/Untitled?node-id=0%3A1&t=ng6mqJSoW2cX4mdR-1
+
 ![오늘의 노을][(https://www.figma.com/file/a95IhbR84MlFaBXHaGkfQQ/Untitled?node-id=15%3A69&t=VQ6QU5tQkmCK0dsT-1)]
 
 <프론트>
