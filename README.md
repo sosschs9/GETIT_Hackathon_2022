@@ -87,5 +87,6 @@ data.json에 직접 데이터를 넣었으나, 추후 개발 tool인 react와 �
 
 ## 10. 시연영상
 > UI 시연 영상
-https://youtu.be/D0iI8iWolAk
+https://youtu.be/D0iI8iWolAk  
 > 전체 개발 시연 영상
+https://youtu.be/h6aaquc4oZc
