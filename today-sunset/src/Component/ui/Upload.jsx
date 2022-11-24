@@ -23,5 +23,4 @@ function Upload(props){
 }
 
 
-
 export default Upload;

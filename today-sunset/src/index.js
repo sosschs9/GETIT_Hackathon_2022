@@ -15,7 +15,7 @@ import Upload from './Component/ui/Upload';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Upload />
+    <App />
   </React.StrictMode>
 );
 

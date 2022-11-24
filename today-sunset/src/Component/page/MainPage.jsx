@@ -36,37 +36,22 @@ const Container = styled.div`
     }
 `;
 
-function PhotoUpload(props) {
-  const {} = props;
+function MainPage(props){
+    const{} = props;
 
-  const navigate = useNavigate();
-  const[text, setText] = useState('');
+    const navigate = useNavigate();
 
-  const onChange = (e) => {
-      setText(e.target.value);
-  };
-
-  const onReset = () => {
-      setText('');
-  };
-
-  return(
-    <div style = {{backgroundImage: `url(${background})`}}>
-    <Wrapper>
-      <Container>
-        <Nav/>
-        <Subject/>
-        <Writer/>
-        <Location/>
-        <Time/>
-        <Text/>
-        <Upload/>
-        <Button onClick={onChange} title={'SUBMIT'}></Button>
-        <Footer/>
-      </Container>
-    </Wrapper>
-    </div>
-  )
+    return(
+        <div style = {{backgroundImage: `url(${background})`}}>
+        <Wrapper>
+            <Container>
+                <Nav/>
+                <h1>HiHi This is main page</h1>
+                <Footer/>
+            </Container>
+        </Wrapper>
+        </div>
+    );
 }
 
-export default PhotoUpload;
+export default MainPage;
