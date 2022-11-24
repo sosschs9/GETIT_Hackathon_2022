@@ -28,7 +28,7 @@ function PhotoListItem(props) {
     return (
         <Wrapper onClick={onClick}>
             <TitleText>{photo.title}</TitleText>
-            <span>조회수: {photo.count}  /  작성자: {photo.writer}</span>
+            <span>작성자: {photo.writer}</span>
         </Wrapper>
     );
 }

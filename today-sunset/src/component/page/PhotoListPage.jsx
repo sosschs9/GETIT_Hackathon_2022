@@ -39,7 +39,7 @@ function PhotoListPage(props) {
                     <PhotoList
                         photos={data}
                         onClickItem={(item) => {
-                            navigate(`/photo/${item.id}`);
+                            navigate(`/photo/${item.index}`);
                         }}
                     />
                 </Container>
