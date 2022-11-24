@@ -11,7 +11,9 @@ import Location from './Component/ui/Location';
 import Time from './Component/ui/Time';
 import Writer from './Component/ui/Writer';
 import Upload from './Component/ui/Upload';
-
+import Nav from './Component/ui/Nav';
+import Footer from './Component/ui/Footer';
+import unChangeText from './Component/ui/UnChangeText';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

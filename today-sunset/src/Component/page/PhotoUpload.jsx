@@ -54,7 +54,6 @@ function PhotoUpload(props) {
     <div style = {{backgroundImage: `url(${background})`}}>
     <Wrapper>
       <Container>
-        <Nav/>
         <Subject/>
         <Writer/>
         <Location/>
@@ -62,7 +61,6 @@ function PhotoUpload(props) {
         <Text/>
         <Upload/>
         <Button onClick={onChange} title={'SUBMIT'}></Button>
-        <Footer/>
       </Container>
     </Wrapper>
     </div>

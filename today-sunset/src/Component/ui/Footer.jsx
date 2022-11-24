@@ -17,7 +17,7 @@ function Footer(props) {
                     </div>
                 </div>
             </footer>
-        </body>
+            </body>
     )
 }
 

@@ -20,11 +20,9 @@ function Location(props){
         <option value="1">이곳은 저만 알고 싶어요!</option>
         <option value="2">한국이 아니예요</option>
         <option value="3"> 
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">노을 제목</span>
             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value={text} onChange={(e) => {setText(e.target.value);}}/>
-        </div>
-        </option>
+                직접 적을게요 
+        </option> 
         </select>
         <Button onClick={onChange} title={'위치적기'}></Button>
     </div>

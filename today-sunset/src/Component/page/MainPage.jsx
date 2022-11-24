@@ -15,6 +15,8 @@ import Text from '../ui/Text';
 import background from "../../img/placeholder.jpg";
 import Nav from '../ui/Nav';
 import Footer from '../ui/Footer';
+import MapView from '../ui/MapView';
+import data from "../../data.json";
 
 const Wrapper = styled.div`
     width: calc(100%-32px);
@@ -41,16 +43,20 @@ function MainPage(props){
 
     const navigate = useNavigate();
 
-    return(
-        <div style = {{backgroundImage: `url(${background})`}}>
-        <Wrapper>
-            <Container>
-                <Nav/>
-                <h1>HiHi This is main page</h1>
-                <Footer/>
-            </Container>
-        </Wrapper>
-        </div>
+    return (
+        <body class="d-flex flex-column min-vh-100">
+
+            <Nav/>
+            <section class="py-5">
+                <div class="container px-4 px-lg-5 my-5">
+                    <div class="row gx-4 gx-lg-5 align-items-center">
+                        <div class="col-md-6"><MapView /></div>
+               
+                    </div>
+                </div>
+            </section>
+            <Footer/>
+        </body>
     );
 }
 
